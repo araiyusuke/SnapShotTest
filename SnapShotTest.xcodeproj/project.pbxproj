@@ -14,6 +14,7 @@
 		F1423AB62810E8D50087F80E /* SnapShotTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1423AB52810E8D50087F80E /* SnapShotTestTests.swift */; };
 		F1423AC02810E8D50087F80E /* SnapShotTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1423ABF2810E8D50087F80E /* SnapShotTestUITests.swift */; };
 		F1423AC22810E8D50087F80E /* SnapShotTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1423AC12810E8D50087F80E /* SnapShotTestUITestsLaunchTests.swift */; };
+		F1423AD02810E9420087F80E /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = F1423ACF2810E9420087F80E /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1423AD02810E9420087F80E /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +163,9 @@
 				F1423AB32810E8D50087F80E /* PBXTargetDependency */,
 			);
 			name = SnapShotTestTests;
+			packageProductDependencies = (
+				F1423ACF2810E9420087F80E /* SnapshotTesting */,
+			);
 			productName = SnapShotTestTests;
 			productReference = F1423AB12810E8D50087F80E /* SnapShotTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = F1423A982810E8D30087F80E;
+			packageReferences = (
+				F1423ACE2810E9420087F80E /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = F1423AA22810E8D30087F80E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1423ACE2810E9420087F80E /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1423ACF2810E9420087F80E /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1423ACE2810E9420087F80E /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1423A992810E8D30087F80E /* Project object */;
 }
